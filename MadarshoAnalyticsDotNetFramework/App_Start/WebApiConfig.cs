@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MadarshoAnalyticsDotNetFramework.Attributes;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web.Http;
@@ -19,6 +20,8 @@ namespace MadarshoAnalyticsDotNetFramework
                 routeTemplate: "api/{controller}/{id}",
                 defaults: new { id = RouteParameter.Optional }
             );
+
+            config.MessageHandlers.Add(new APIKeyHandler());
         }
     }
 }
