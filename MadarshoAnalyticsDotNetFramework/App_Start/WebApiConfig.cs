@@ -1,4 +1,4 @@
-﻿using MadarshoAnalyticsDotNetFramework.Attributes;
+﻿using MadarshoAnalyticsDotNetFramework.Handlers;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -21,7 +21,7 @@ namespace MadarshoAnalyticsDotNetFramework
                 defaults: new { id = RouteParameter.Optional }
             );
 
-            config.MessageHandlers.Add(new APIKeyHandler());
+            config.MessageHandlers.Add(new ApiKeyHandler());
         }
     }
 }

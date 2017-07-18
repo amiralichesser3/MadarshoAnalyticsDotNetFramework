@@ -9,8 +9,7 @@ namespace MadarshoAnalyticsDotNetFramework.Models
     public class User
     {
         [Key]
-        public long Id { get; set; }
-        public string Username { get; set; }
+        public long Id { get; set; } 
         public string FirebaseToken { get; set; }
         public string AppVersion { get; set; } 
         public long RegisterDate { get; set; } 

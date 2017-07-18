@@ -9,6 +9,7 @@ namespace MadarshoAnalyticsDotNetFramework.ViewModels
     {
         public long UserId { get; set; }
         public string FirebaseToken { get; set; }
+        public string AppVersion { get; set; }
         public ICollection<ActionView> Actions { get; set; }
     }
 }
